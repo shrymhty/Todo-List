@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B0D4B8;
+    color: #001c44;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    border: none;
+    background: #EAE7D6;
+    font-size: 2rem;
+}
+
+form button {
+    color: #001c44;
+    cursor: pointer;
+    transition: all 0.3secs ease;
+}
+
+form button:hover {
+    background: #001c44;
+    color: #EAE7D6;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: #5D7B6F;
+    color: #EAE7D6;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.delete-btn {
+    background: #5D7B6F;
+    color: #001c44;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background: #EAE7D6;
+    color: #001c44;
+    padding: 2px;
+    font-size: 1rem;
+    border-color: #EAE7D6;
+    border-radius: 55%;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-weight: 100px;
+}
+
+.complete-btn:hover {
+    background: #001c44;
+    color: #EAE7D6;
+    border-color: #001c44;
+}
+
+.delete-btn:hover {
+    color: #EAE7D6;
+}
