@@ -28,6 +28,7 @@ form input, form button {
     border: none;
     background: #EAE7D6;
     font-size: 2rem;
+    outline: none;
 }
 
 form button {
@@ -39,6 +40,7 @@ form button {
 form button:hover {
     background: #001c44;
     color: #EAE7D6;
+    transition: all 0.3s ease;
 }
 
 .todo-container {
@@ -94,5 +96,51 @@ form button:hover {
 }
 
 .delete-btn:hover {
+    color: #EAE7D6;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+select {
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color:#001c44;
+    background-color: #EAE7D6;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    background: #EAE7D6;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;   
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: #001c44;
     color: #EAE7D6;
 }
